@@ -8,18 +8,20 @@ The repository is under construction. Soon, it will contain the code, the datase
 
 This repository contains the implementation of transfer learning experiments for heating energy consumption prediction. The file structure is explained as:
 
-├── DATA/ # Contains city-specific datasets 
-│ ├── ANKARA/ # Ankara city data 
-│ │ └── ankara.csv │ 
-├── ERZURUM/ # Erzurum city data 
-│ │ └── erzurum.csv 
-│ ├── IZMIR/ # Izmir city data 
-│ │ └── izmir.csv 
-│ └── KAYSERI/ # Kayseri city data 
-│ └── kayseri.csv 
-├── ankara_source_model.pt # Pre-trained source model for transfer learning
+```
+├── DATA/                      # Contains city-specific datasets 
+│   ├── ANKARA/                # Ankara city data 
+│   │   └── ankara.csv         
+│   ├── ERZURUM/               # Erzurum city data 
+│   │   └── erzurum.csv        
+│   ├── IZMIR/                 # Izmir city data 
+│   │   └── izmir.csv          
+│   └── KAYSERI/               # Kayseri city data 
+│       └── kayseri.csv        
+├── ankara_source_model.pt     # Pre-trained source model for transfer learning
 ├── TL_experiment_framework.py # Core experiment framework implementation 
-└── TL_experiment_runner.py # Script to run the experiments
+└── TL_experiment_runner.py    # Script to run the experiments
+```
 
 
 ## Usage 
