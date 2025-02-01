@@ -35,7 +35,6 @@ The main driver script is TL_experiment_runner.py. This script reads the city-sp
 
 
 The TL_experiment_framework.py expects the following arguments:
-```markdown
 - `--city`: City for the experiment. Choices are 'erzurum', 'izmir', 'kayseri'. (required)
 - `--ratio`: Ratio of training data to use (0-1). (required)
 - `--experiment_type`: Type of experiment to run. Choices are 'baseline', 'transfer_learning', 'lora', 'lora_plus'. (required)
@@ -47,7 +46,6 @@ The TL_experiment_framework.py expects the following arguments:
 - `--n_epochs`: Number of training epochs. Default is 20. (optional)
 - `--layer_num`: Number of layers in the model. Default is 4. (optional)
 - `--layer_size`: Size of layers in the model. Default is 64. (optional)
-```
 
 To run different experiments, several examples are provided:
 ```bash
