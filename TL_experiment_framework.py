@@ -263,10 +263,10 @@ class BaseExperiment(ABC):
             'current_fold': fold_num,
         })
 
-        save_dir = f"./models/{self.config.city}"
+        save_dir = f"./models/{self.config.city}/{self.config.experiment_type}/{self.config.ratio}"
         os.makedirs(save_dir, exist_ok=True)
 
-        base_filename = f"{self.config.experiment_type}_valr2_{final_val_r2:.4f}_testr2_{final_test_r2:.4f}"
+        base_filename = f"valr2_{final_val_r2:.4f}_testr2_{final_test_r2:.4f}"
         
         if self.config.experiment_type == "lora":
             base_filename += f"_rank_{self.config.rank}"
