@@ -55,4 +55,4 @@ python TL_experiment_runner.py --city erzurum --ratio 0.5 --experiment_type lora
 python TL_experiment_runner.py --city izmir --ratio 1.0 --experiment_type lora_plus --rank 4 --lr_ratio 8
 ```
 
-After training, the models are saved to their designated folders like `models/<city>/<experiment_type>/<ratio>` with filename containing the final validation and test R² scores appended with fold number and additional model information if available (rank variable of LoRA/LoRA+ and lr_ratio variable of LoRA+).
+After training, the models are saved to their designated folders `models/<city>/<experiment_type>/<ratio>/` with filename containing the final validation and test R² scores appended with fold number and additional model information if available (rank variable of LoRA/LoRA+ and lr_ratio variable of LoRA+).
